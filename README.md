@@ -23,23 +23,19 @@
 <table>
 	<tr align="center">
 นางสาวมัญชรี ทยาธรรม 61070176 <br>
-    Git Hub
-    <td><a href="https://github.com/mcrrlee">mcrrlee</a></td>
+    Git Hub: <a href="https://github.com/mcrrlee">mcrrlee</a>
       </tr><br>
 	<tr align="center">
 นางสาววิลาวัณย์ ใจงามเลิศวงศ์ 61070209 <br>
-    Git Hub
-		<td><a href="https://github.com/wirawan05595">wirawan05595</a><td>
+    Git Hub:<a href="https://github.com/wirawan05595">wirawan05595</a>
       </tr><br>
 	<tr align="center">
 นางสาวอัญชลี ทิพย์ประเสริฐ 61070264 <br>
-    Git Hub
-		<td><a href="https://github.com/ppllelp">ppllelp</a><td>
+    Git Hub:<a href="https://github.com/ppllelp">ppllelp</a>
       </tr><br>
 	<tr align="center">
 นางสาว อณิษฐา ใจอ่อน 61070255 <br>
-    Git Hub
-		<td><a href="https://github.com/AnitthaJai-on">Anittha Jai-on</a><td>
+    Git Hub:<a href="https://github.com/AnitthaJai-on">Anittha Jai-on</a>
       </tr><br>
 </table>
 
