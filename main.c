@@ -662,6 +662,8 @@ if (check == 0){
             gtk_label_set_text(GTK_LABEL(output), buffer);
         }
     }
+
+    // *********************************** แปลงไฟน์เป็น... ****************
 }
 }
 static void libraryscale(GtkApplication *app,GtkWidget *widget, gpointer data) {
