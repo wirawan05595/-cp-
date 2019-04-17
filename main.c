@@ -5,9 +5,10 @@
 
 static GtkWidget *result;
 static GtkWidget *number1;
-// static GtkWidget *number2;
-static GtkWidget *section_1;
-static GtkWidget *section_2;
+static GtkWidget *combo_box1;
+static GtkWidget *combo_box2;
+const char *scale1[] = {"ช้อนชา", "ช้อนโต๊ะ","เครื่องชั่ง(หน่วยกรัม)","ถ้วยตวง", "ปอนด์", "ไพน์", "ควอท", "แกลลอน","ออนซ์"};
+const char *scale2[] = {"ช้อนชา", "ช้อนโต๊ะ","เครื่องชั่ง(หน่วยกรัม)","ถ้วยตวง", "ปอนด์", "ไพน์", "ควอท", "แกลลอน","ออนซ์"};
 
 static void libraryscale(GtkApplication *app,GtkWidget *widget, gpointer data) {
 	GtkWidget *window;
@@ -52,12 +53,17 @@ static void section(GtkApplication *app,GtkWidget *widget, gpointer data) {
   	g_signal_connect (button, "clicked", G_CALLBACK (libraryscale), (gpointer) window);
   	gtk_grid_attach(GTK_GRID(grid), button, 0, 0, 1, 1);
   	gtk_container_set_border_width (GTK_CONTAINER (window), 250);
-	// char buffer[32];
+
+
 
     result = gtk_label_new("มาตรส่วนที่มี:");
     gtk_grid_attach(GTK_GRID(grid), result, 2, 1, 1, 1);
-	section_1 = gtk_entry_new();
-    gtk_grid_attach(GTK_GRID(grid), section_1, 3, 1, 1, 1);
+
+
+
+  combo_box1 = gtk_combo_box_text_new();
+     gtk_layout_put(GTK_LAYOUT(layout), combo_box1, 450, 250);
+    gtk_grid_attach(GTK_GRID(grid), combo_box1, 3, 1, 1, 1);
 
 
     result = gtk_label_new("  ");
@@ -71,8 +77,16 @@ static void section(GtkApplication *app,GtkWidget *widget, gpointer data) {
 
     result = gtk_label_new("  มาตรส่วนที่ต้องการ:  ");
     gtk_grid_attach(GTK_GRID(grid), result, 3, 3, 1, 1);
-    section_2 = gtk_entry_new();
-    gtk_grid_attach(GTK_GRID(grid), section_2, 4, 3, 1, 1);
+
+
+        combo_box2 = gtk_combo_box_text_new();
+    gtk_layout_put(GTK_LAYOUT(layout), combo_box2, 790, 350);
+    gtk_grid_attach(GTK_GRID(grid), combo_box2, 4, 3, 1, 1);
+
+    for (int i = 0; i < G_N_ELEMENTS(scale2); i++){
+        gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT(combo_box2), scale2[i]);
+    }
+    gtk_combo_box_set_active(GTK_COMBO_BOX(combo_box2), 0);
 
 
     result = gtk_label_new("  ");
