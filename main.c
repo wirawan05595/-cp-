@@ -158,6 +158,22 @@ if (check == 0){
         }
     }
 
+// *********************************** แปลงช้อนโต๊ะเป็น... ****************
+
+    else if (strcmp(select_scale1, scale1[1]) == 0 && strcmp(select_scale2, scale2[0]) == 0)
+    {
+        double box = num1/3;
+        if (fmod(box,1) == 0)
+        {
+            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            gtk_label_set_text(GTK_LABEL(output), buffer);
+        }
+        else {
+            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
+            gtk_label_set_text(GTK_LABEL(output), buffer);
+        }
+    }
+
 
 }
 }
