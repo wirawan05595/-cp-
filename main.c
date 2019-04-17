@@ -454,6 +454,19 @@ if (check == 0){
             gtk_label_set_text(GTK_LABEL(output), buffer);
         }
     }
+
+      else if (strcmp(select_scale1, scale1[3]) == 0 && strcmp(select_scale2, scale2[3]) == 0)
+    {
+        if (fmod(num1,1) == 0)
+        {
+            snprintf(buffer, sizeof(buffer), "%.0lf %s",num1,select_scale1);
+            gtk_label_set_text(GTK_LABEL(output), buffer);
+        }
+        else {
+            snprintf(buffer, sizeof(buffer), "%.02lf %s",num1,select_scale1);
+            gtk_label_set_text(GTK_LABEL(output), buffer);
+        }
+    }
 }
 }
 static void libraryscale(GtkApplication *app,GtkWidget *widget, gpointer data) {
