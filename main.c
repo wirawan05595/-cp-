@@ -40,133 +40,73 @@ if (check == 0)
 // *********************************** แปลงช้อนชาเป็น... ****************
     if (strcmp(select_scale1, scale1[0]) == 0 && strcmp(select_scale2, scale2[0]) == 0)
     {
-        if (fmod(num1,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s", num1 ,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s", num1 ,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else{
-            snprintf(buffer, sizeof(buffer), "%.02lf %s", num1 ,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
+
     }
 
 
     else if (strcmp(select_scale1, scale1[0]) == 0 && strcmp(select_scale2, scale2[1]) == 0)
     {
         double box = num1/(0.33333333333);
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else{
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
+
     }
 
 
      else if (strcmp(select_scale1, scale1[0]) == 0 && strcmp(select_scale2, scale2[2]) == 0)
     {
         double box = num1/5;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else{
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
 
     else if (strcmp(select_scale1, scale1[0]) == 0 && strcmp(select_scale2, scale2[3]) == 0)
     {
         double box = num1/0.02083333333;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
 
     else if (strcmp(select_scale1, scale1[0]) == 0 && strcmp(select_scale2, scale2[4]) == 0)
     {
         double box = num1/0.01041666666;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
+
     }
 
 
     else if (strcmp(select_scale1, scale1[0]) == 0 && strcmp(select_scale2, scale2[5]) == 0)
     {
         double box = num1/0.01041666666;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
 
     else if (strcmp(select_scale1, scale1[0]) == 0 && strcmp(select_scale2, scale2[6]) == 0)
     {
         double box = num1/0.00520833333;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
     else if (strcmp(select_scale1, scale1[0]) == 0 && strcmp(select_scale2, scale2[7]) == 0)
     {
         double box = num1*768.00;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
     else if (strcmp(select_scale1, scale1[0]) == 0 && strcmp(select_scale2, scale2[8]) == 0)
     {
         double box = num1*6;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
 
@@ -175,29 +115,15 @@ if (check == 0)
     else if (strcmp(select_scale1, scale1[1]) == 0 && strcmp(select_scale2, scale2[0]) == 0)
     {
         double box = num1/3;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
 
     else if (strcmp(select_scale1, scale1[1]) == 0 && strcmp(select_scale2, scale2[1]) == 0)
     {
-        if (fmod(num1,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s", num1 ,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s", num1 ,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else{
-            snprintf(buffer, sizeof(buffer), "%.02lf %s", num1 ,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
 
@@ -205,100 +131,51 @@ if (check == 0)
     else if (strcmp(select_scale1, scale1[1]) == 0 && strcmp(select_scale2, scale2[2]) == 0)
     {
         double box = num1/16;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
     else if (strcmp(select_scale1, scale1[1]) == 0 && strcmp(select_scale2, scale2[3]) == 0)
     {
         double box = num1/0.0625;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
     else if (strcmp(select_scale1, scale1[1]) == 0 && strcmp(select_scale2, scale2[4]) == 0)
     {
         double box = num1/0.03125;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
 
     else if (strcmp(select_scale1, scale1[1]) == 0 && strcmp(select_scale2, scale2[5]) == 0)
     {
         double box = num1/0.03125;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
     else if (strcmp(select_scale1, scale1[1]) == 0 && strcmp(select_scale2, scale2[6]) == 0)
     {
         double box = num1/0.015625;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
     else if (strcmp(select_scale1, scale1[1]) == 0 && strcmp(select_scale2, scale2[7]) == 0)
     {
         double box = num1*256;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
     else if (strcmp(select_scale1, scale1[1]) == 0 && strcmp(select_scale2, scale2[8]) == 0)
     {
         double box = num1*2;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
 // *********************************** แปลงกรัมเป็น... ****************
@@ -306,15 +183,8 @@ if (check == 0)
     else if (strcmp(select_scale1, scale1[2]) == 0 && strcmp(select_scale2, scale2[0]) == 0)
     {
         double box = num1*5;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf กรัม",box);
+            snprintf(buffer, sizeof(buffer), "%.03lf กรัม",box);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf กรัม",box);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
 
@@ -322,114 +192,58 @@ if (check == 0)
     else if (strcmp(select_scale1, scale1[2]) == 0 && strcmp(select_scale2, scale2[1]) == 0)
     {
         double box = num1*15;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf กรัม",box);
+            snprintf(buffer, sizeof(buffer), "%.03lf กรัม",box);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf กรัม",box);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
 
     else if (strcmp(select_scale1, scale1[2]) == 0 && strcmp(select_scale2, scale2[2]) == 0)
     {
-        if (fmod(num1,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf กรัม", num1);
+            snprintf(buffer, sizeof(buffer), "%.03lf กรัม", num1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else{
-            snprintf(buffer, sizeof(buffer), "%.02lf กรัม", num1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
     else if (strcmp(select_scale1, scale1[2]) == 0 && strcmp(select_scale2, scale2[3]) == 0)
     {
         double box = num1*240;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf กรัม",box);
+            snprintf(buffer, sizeof(buffer), "%.03lf กรัม",box);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf กรัม",box);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
     else if (strcmp(select_scale1, scale1[2]) == 0 && strcmp(select_scale2, scale2[4]) == 0)
     {
         double box = num1*453.59;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf กรัม",box);
+            snprintf(buffer, sizeof(buffer), "%.03lf กรัม",box);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf กรัม",box);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
 
        else if (strcmp(select_scale1, scale1[2]) == 0 && strcmp(select_scale2, scale2[5]) == 0)
     {
         double box = num1*480;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf กรัม",box);
+            snprintf(buffer, sizeof(buffer), "%.03lf กรัม",box);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf กรัม",box);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
     else if (strcmp(select_scale1, scale1[2]) == 0 && strcmp(select_scale2, scale2[6]) == 0)
     {
         double box = num1*960;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf กรัม",box);
+            snprintf(buffer, sizeof(buffer), "%.03lf กรัม",box);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf กรัม",box);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[2]) == 0 && strcmp(select_scale2, scale2[7]) == 0)
     {
         double box = num1*3840;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf กรัม",box);
+            snprintf(buffer, sizeof(buffer), "%.03lf กรัม",box);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf กรัม",box);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
     else if (strcmp(select_scale1, scale1[2]) == 0 && strcmp(select_scale2, scale2[8]) == 0)
     {
         double box = num1*28.3495;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf กรัม",box);
+            snprintf(buffer, sizeof(buffer), "%.03lf กรัม",box);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf กรัม",box);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
 // *********************************** แปลงถ้วยตวงเป็น... ****************
@@ -437,375 +251,186 @@ if (check == 0)
     else if (strcmp(select_scale1, scale1[3]) == 0 && strcmp(select_scale2, scale2[0]) == 0)
     {
         double box = num1*0.02083333333;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[3]) == 0 && strcmp(select_scale2, scale2[1]) == 0)
     {
         double box = num1*0.0625;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[3]) == 0 && strcmp(select_scale2, scale2[2]) == 0)
     {
         double box = num1/240;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
             else if (strcmp(select_scale1, scale1[3]) == 0 && strcmp(select_scale2, scale2[3]) == 0)
     {
-        if (fmod(num1,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",num1,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",num1,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",num1,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[3]) == 0 && strcmp(select_scale2, scale2[4]) == 0)
     {
         double box = num1/0.5;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[3]) == 0 && strcmp(select_scale2, scale2[5]) == 0)
     {
         double box = num1*2;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
             else if (strcmp(select_scale1, scale1[3]) == 0 && strcmp(select_scale2, scale2[6]) == 0)
     {
         double box = num1*4;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[3]) == 0 && strcmp(select_scale2, scale2[7]) == 0)
     {
         double box = num1*16;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[3]) == 0 && strcmp(select_scale2, scale2[8]) == 0)
     {
         double box = num1/8;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 // *********************************** แปลงปอนด์เป็น... ****************
         else if (strcmp(select_scale1, scale1[4]) == 0 && strcmp(select_scale2, scale2[0]) == 0)
     {
         double box = num1/228;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[4]) == 0 && strcmp(select_scale2, scale2[1]) == 0)
     {
         double box = num1/96;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[4]) == 0 && strcmp(select_scale2, scale2[2]) == 0)
     {
         double box = num1/453.59;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[4]) == 0 && strcmp(select_scale2, scale2[3]) == 0)
     {
         double box = num1/2;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[4]) == 0 && strcmp(select_scale2, scale2[4]) == 0)
     {
-        if (fmod(num1,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",num1,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",num1,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",num1,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[4]) == 0 && strcmp(select_scale2, scale2[5]) == 0)
     {
-        if (fmod(num1,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",num1,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",num1,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",num1,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[4]) == 0 && strcmp(select_scale2, scale2[6]) == 0)
     {
         double box = num1*2;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[4]) == 0 && strcmp(select_scale2, scale2[7]) == 0)
     {
         double box = num1*8;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[4]) == 0 && strcmp(select_scale2, scale2[8]) == 0)
     {
         double box = num1/16;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
     // *********************************** แปลงไฟน์เป็น... ****************
         else if (strcmp(select_scale1, scale1[5]) == 0 && strcmp(select_scale2, scale2[0]) == 0)
     {
         double box = num1/96;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[5]) == 0 && strcmp(select_scale2, scale2[1]) == 0)
     {
         double box = num1/32;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[5]) == 0 && strcmp(select_scale2, scale2[2]) == 0)
     {
         double box = num1/480;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[5]) == 0 && strcmp(select_scale2, scale2[3]) == 0)
     {
         double box = num1/2;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[5]) == 0 && strcmp(select_scale2, scale2[4]) == 0)
     {
-        if (fmod(num1,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",num1,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",num1,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",num1,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[5]) == 0 && strcmp(select_scale2, scale2[5]) == 0)
     {
-        if (fmod(num1,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",num1,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",num1,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",num1,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[5]) == 0 && strcmp(select_scale2, scale2[6]) == 0)
     {
         double box = num1*2;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[5]) == 0 && strcmp(select_scale2, scale2[7]) == 0)
     {
         double box = num1*8;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[5]) == 0 && strcmp(select_scale2, scale2[8]) == 0)
     {
         double box = num1/16;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
     // *********************************** แปลงควอทเป็น... ****************
@@ -813,377 +438,188 @@ if (check == 0)
         else if (strcmp(select_scale1, scale1[6]) == 0 && strcmp(select_scale2, scale2[0]) == 0)
     {
         double box = num1/192;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[6]) == 0 && strcmp(select_scale2, scale2[1]) == 0)
     {
         double box = num1/64;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[6]) == 0 && strcmp(select_scale2, scale2[2]) == 0)
     {
         double box = num1/960;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[6]) == 0 && strcmp(select_scale2, scale2[3]) == 0)
     {
         double box = num1/4;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[6]) == 0 && strcmp(select_scale2, scale2[4]) == 0)
     {
         double box = num1/2;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[6]) == 0 && strcmp(select_scale2, scale2[5]) == 0)
     {
         double box = num1/2;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[6]) == 0 && strcmp(select_scale2, scale2[6]) == 0)
     {
-        if (fmod(num1,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",num1,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",num1,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",num1,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[6]) == 0 && strcmp(select_scale2, scale2[7]) == 0)
     {
         double box = num1*4;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[6]) == 0 && strcmp(select_scale2, scale2[8]) == 0)
     {
         double box = num1/40;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
     // *********************************** แปลงแกลลอนเป็น... ****************
         else if (strcmp(select_scale1, scale1[7]) == 0 && strcmp(select_scale2, scale2[0]) == 0)
     {
         double box = num1/768;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[7]) == 0 && strcmp(select_scale2, scale2[1]) == 0)
     {
         double box = num1/256;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[7]) == 0 && strcmp(select_scale2, scale2[2]) == 0)
     {
         double box = num1/3840;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[7]) == 0 && strcmp(select_scale2, scale2[3]) == 0)
     {
         double box = num1/16;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[7]) == 0 && strcmp(select_scale2, scale2[4]) == 0)
     {
         double box = num1/8;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[7]) == 0 && strcmp(select_scale2, scale2[5]) == 0)
     {
         double box = num1/8;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[7]) == 0 && strcmp(select_scale2, scale2[6]) == 0)
     {
         double box = num1/4;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[7]) == 0 && strcmp(select_scale2, scale2[7]) == 0)
     {
-        if (fmod(num1,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",num1,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",num1,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",num1,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[7]) == 0 && strcmp(select_scale2, scale2[8]) == 0)
     {
         double box = num1/128;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
-    // *********************************** แปลงออนซ์เป็น... ****************
+//*********************************** แปลงออนซ์เป็น... ****************
         else if (strcmp(select_scale1, scale1[8]) == 0 && strcmp(select_scale2, scale2[0]) == 0)
     {
         double box = num1/6;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[8]) == 0 && strcmp(select_scale2, scale2[1]) == 0)
     {
         double box = num1/2;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[8]) == 0 && strcmp(select_scale2, scale2[2]) == 0)
     {
         double box = num1/30;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[8]) == 0 && strcmp(select_scale2, scale2[3]) == 0)
     {
         double box = num1*8;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[8]) == 0 && strcmp(select_scale2, scale2[4]) == 0)
     {
         double box = num1/0.06;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[8]) == 0 && strcmp(select_scale2, scale2[5]) == 0)
     {
         double box = num1/0.0625;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[8]) == 0 && strcmp(select_scale2, scale2[6]) == 0)
     {
         double box = num1/0.03;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[8]) == 0 && strcmp(select_scale2, scale2[7]) == 0)
     {
         double box = num1*128;
-        if (fmod(box,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",box,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",box,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",box,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 
         else if (strcmp(select_scale1, scale1[8]) == 0 && strcmp(select_scale2, scale2[8]) == 0)
     {
-        if (fmod(num1,1) == 0)
-        {
-            snprintf(buffer, sizeof(buffer), "%.0lf %s",num1,select_scale1);
+            snprintf(buffer, sizeof(buffer), "%.03lf %s",num1,select_scale1);
             gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
-        else {
-            snprintf(buffer, sizeof(buffer), "%.02lf %s",num1,select_scale1);
-            gtk_label_set_text(GTK_LABEL(output), buffer);
-        }
     }
 }
 }
@@ -1227,14 +663,14 @@ static void section(GtkApplication *app,GtkWidget *widget, gpointer data) {
 
 
     window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
-    gtk_window_set_title (GTK_WINDOW (window), "cp61");
+    gtk_window_set_title (GTK_WINDOW (window), "The Changer Bakery");
     gtk_container_set_border_width (GTK_CONTAINER (window), 0);
-    gtk_window_set_default_size(GTK_WINDOW(window), 1000, 800);
+    gtk_window_set_default_size(GTK_WINDOW(window), 1000, 700);
     gtk_window_set_position(GTK_WINDOW(window), GTK_WIN_POS_CENTER);
     layout = gtk_layout_new(NULL, NULL);
     gtk_container_add(GTK_CONTAINER (window), layout);
     gtk_widget_show(layout);
-    image2 = gtk_image_new_from_file("2.png");
+    image2 = gtk_image_new_from_file("2.jpg");
     gtk_layout_put(GTK_LAYOUT(layout), image2, 0, 0);
     grid = gtk_grid_new ();
     gtk_container_add (GTK_CONTAINER (window), grid);
@@ -1253,41 +689,40 @@ static void section(GtkApplication *app,GtkWidget *widget, gpointer data) {
 
 
 
-    result = gtk_label_new(NULL);
-    gtk_label_set_markup (GTK_LABEL (result), "<span face=\"Courier New\" font=\"20\" color=\"#006633\"bgcolor=\"#00CC66\"><b>The scale has:</b></span>");
-    gtk_layout_put(GTK_LAYOUT(layout), result, 110, 250);
-    gtk_grid_attach(GTK_GRID(grid), result, 2, 1, 1, 1);
+    image2 = gtk_image_new_from_file("text2.png");
+    gtk_layout_put(GTK_LAYOUT(layout), image2, 110, 100);
+    gtk_grid_attach(GTK_GRID(grid), image2, 2, 1, 1, 1);
 
 
-     combo_box1 = gtk_combo_box_text_new();
-     gtk_layout_put(GTK_LAYOUT(layout), combo_box1, 450, 250);
-    gtk_grid_attach(GTK_GRID(grid), combo_box1, 3, 1, 1, 1);
+        number1 = gtk_entry_new();
+     gtk_layout_put(GTK_LAYOUT(layout), number1, 500, 140);
+    gtk_grid_attach(GTK_GRID(grid), number1, 3, 1, 1, 1);
+
+
+    image2 = gtk_image_new_from_file("text1.png");
+    gtk_layout_put(GTK_LAYOUT(layout), image2, 100, 180);
+    gtk_grid_attach(GTK_GRID(grid), image2, 0, 3, 1, 1);
+
+    combo_box1 = gtk_combo_box_text_new();
+    gtk_layout_put(GTK_LAYOUT(layout), combo_box1, 450, 220);
+    gtk_grid_attach(GTK_GRID(grid), combo_box1, 2, 3, 1, 1);
 
     for (int i = 0; i < G_N_ELEMENTS(scale1); i++){
         gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT(combo_box1), scale1[i]);
     }
     gtk_combo_box_set_active(GTK_COMBO_BOX(combo_box1), 0);
 
-    result = gtk_label_new(NULL);
-    gtk_label_set_markup (GTK_LABEL (result), "<span face=\"Courier New\" font=\"15\" color=\"#006633\"bgcolor=\"#00CC66\"><b>The desired quantity:</b></span>");
-    gtk_layout_put(GTK_LAYOUT(layout), result, 10, 350);
-    gtk_grid_attach(GTK_GRID(grid), result, 0, 3, 1, 1);
 
 
-    number1 = gtk_entry_new();
-    gtk_layout_put(GTK_LAYOUT(layout), number1, 320, 350);
-    gtk_grid_attach(GTK_GRID(grid), number1, 2, 3, 1, 1);
 
-
-    result = gtk_label_new(NULL);
-    gtk_label_set_markup (GTK_LABEL (result), "<span face=\"Courier New\" font=\"15\" color=\"#006633\"bgcolor=\"#00CC66\"><b>The scale required:</b></span>");
-    gtk_layout_put(GTK_LAYOUT(layout), result, 500, 350);
-    gtk_grid_attach(GTK_GRID(grid), result, 3, 3, 1, 1);
+    image2 = gtk_image_new_from_file("text3.png");
+    gtk_layout_put(GTK_LAYOUT(layout), image2, 100, 260);
+    gtk_grid_attach(GTK_GRID(grid), image2, 3, 3, 1, 1);
 
 
 
     combo_box2 = gtk_combo_box_text_new();
-    gtk_layout_put(GTK_LAYOUT(layout), combo_box2, 790, 350);
+    gtk_layout_put(GTK_LAYOUT(layout), combo_box2, 470, 300);
     gtk_grid_attach(GTK_GRID(grid), combo_box2, 4, 3, 1, 1);
 
     for (int i = 0; i < G_N_ELEMENTS(scale2); i++){
@@ -1301,24 +736,36 @@ static void section(GtkApplication *app,GtkWidget *widget, gpointer data) {
     gtk_button_set_image(GTK_BUTTON(button2), image2);
     gtk_button_set_relief(GTK_BUTTON(button2), GTK_RELIEF_NONE);
     g_signal_connect(button2, "clicked", G_CALLBACK (do_calculate), (gpointer) window);
-    gtk_layout_put(GTK_LAYOUT(layout), button2, 400, 450);
+    gtk_layout_put(GTK_LAYOUT(layout), button2, 390, 350);
     gtk_grid_attach(GTK_GRID(grid), button2, 0, 4, 5, 1);
 
     result = gtk_label_new(NULL);
-    gtk_label_set_markup (GTK_LABEL (result), "<span font=\"10\" color=\"#006633\"bgcolor=\"#00CC66\"><b>** ปริมาณรับเฉพาะ จำนวนเต็มและทศนิยมเท่านั้น! ตย. 3/4 ถ้วยตวง = 0.75 ถ้วยตวง**</b></span>");
-    gtk_layout_put(GTK_LAYOUT(layout), result, 150, 400);
+    gtk_label_set_markup (GTK_LABEL (result), "<span font=\"10\" color=\"#fff\"bgcolor=\"#FFCCCC\"><b>** ปริมาณรับเฉพาะ จำนวนเต็มและทศนิยมเท่านั้น! ตย. 3/4 ถ้วยตวง = 0.75 ถ้วยตวง**</b></span>");
+    gtk_layout_put(GTK_LAYOUT(layout), result, 150, 470);
     gtk_grid_attach(GTK_GRID(grid), result, 0, 5, 6, 1);
 
 
-    result = gtk_label_new(NULL);
-    gtk_label_set_markup (GTK_LABEL (result), "<span font=\"20\" color=\"#006633\"bgcolor=\"#00CC66\"><b>ผลลัทธ์</b></span>");
-    gtk_layout_put(GTK_LAYOUT(layout), result, 380, 600);
-    gtk_grid_attach(GTK_GRID(grid), result, 0, 7, 7, 1);
+    image2 = gtk_image_new_from_file("text4.png");
+    gtk_layout_put(GTK_LAYOUT(layout), image2, 350, 490);
+    gtk_grid_attach(GTK_GRID(grid), image2, 0, 7, 7, 1);
+
+    image2 = gtk_image_new_from_file("output.png");
+    gtk_layout_put(GTK_LAYOUT(layout), image2, 380, 600);
+    gtk_grid_attach(GTK_GRID(grid), image2, 0, 8, 8, 1);
+
+    image2 = gtk_image_new_from_file("8.png");
+    gtk_layout_put(GTK_LAYOUT(layout), image2, 750, 10);
+    gtk_grid_attach(GTK_GRID(grid), image2, 0, 8, 8, 1);
+
 
     output = gtk_label_new(NULL);
     gtk_label_set_markup (GTK_LABEL(output), "<span font=\"30\" color=\"#006633\"><b> </b></span>");
-    gtk_layout_put(GTK_LAYOUT(layout), output, 400, 700);
-    gtk_grid_attach(GTK_GRID(grid), output, 0, 8, 8, 1);
+    gtk_layout_put(GTK_LAYOUT(layout), output, 440, 640);
+    gtk_grid_attach(GTK_GRID(grid), output, 0, 9, 9, 1);
+
+
+
+
 
     box = gtk_box_new (TRUE, 1);
     gtk_box_pack_end (GTK_BOX (box), button, TRUE, TRUE, 1);
@@ -1326,12 +773,6 @@ static void section(GtkApplication *app,GtkWidget *widget, gpointer data) {
     gtk_widget_show_all(window);
 
 }
-// static void ice_jung(GtkWidget *widget, gpointer data) {
-//     char buffer[32];
-//     snprintf(buffer, sizeof(buffer), "iceice2");
-
-//     gtk_label_set_text(GTK_LABEL(result), buffer);
-// }
 
 static void activate (GtkApplication *app,gpointer user_data)
 {
@@ -1339,15 +780,14 @@ static void activate (GtkApplication *app,gpointer user_data)
   GtkWidget *box;
   GtkWidget *grid;
   GtkWidget *button;
-  // GtkWidget *icebutton;
   GtkWidget *layout;
   GtkWidget *image;
 
 
   window = gtk_application_window_new (app);
-  gtk_window_set_title (GTK_WINDOW (window), "cp61");
+  gtk_window_set_title (GTK_WINDOW (window), "The Changer Bakery");
   gtk_container_set_border_width (GTK_CONTAINER (window), 0);
-  gtk_window_set_default_size(GTK_WINDOW(window), 600, 600);
+  gtk_window_set_default_size(GTK_WINDOW(window), 700, 700);
    gtk_window_set_position(GTK_WINDOW(window), GTK_WIN_POS_CENTER);
   layout = gtk_layout_new(NULL, NULL);
     gtk_container_add(GTK_CONTAINER (window), layout);
@@ -1356,7 +796,7 @@ static void activate (GtkApplication *app,gpointer user_data)
     gtk_layout_put(GTK_LAYOUT(layout), image, 0, 0);
 
     image = gtk_image_new_from_file("logo.png");
-  gtk_layout_put(GTK_LAYOUT(layout), image, 100, 10);
+  gtk_layout_put(GTK_LAYOUT(layout), image, 150, 10);
   grid = gtk_grid_new ();
   gtk_container_add (GTK_CONTAINER (window), grid);
 
@@ -1365,15 +805,9 @@ static void activate (GtkApplication *app,gpointer user_data)
   gtk_button_set_image(GTK_BUTTON(button), image);
     gtk_button_set_relief(GTK_BUTTON(button), GTK_RELIEF_NONE);
   g_signal_connect (button, "clicked", G_CALLBACK (section), (gpointer) window);
-  gtk_layout_put(GTK_LAYOUT(layout), button, 200, 250);
+  gtk_layout_put(GTK_LAYOUT(layout), button, 250, 250);
 
   gtk_grid_attach (GTK_GRID (grid), button, 250, 0, 1, 1);
-
-
-  // icebutton = gtk_button_new_with_label (" Button 2");
-  // g_signal_connect (icebutton, "clicked", G_CALLBACK (ice_jung), NULL);
-  // gtk_layout_put(GTK_LAYOUT(layout), icebutton, 200, 250);
-  // gtk_grid_attach (GTK_GRID (grid), icebutton, 250, 2, 2, 1);
 
 
   button = gtk_button_new();
@@ -1382,9 +816,12 @@ static void activate (GtkApplication *app,gpointer user_data)
     gtk_button_set_relief(GTK_BUTTON(button), GTK_RELIEF_NONE);
     gtk_button_set_relief(GTK_BUTTON(button), GTK_RELIEF_NONE);
   g_signal_connect_swapped (button, "clicked", G_CALLBACK (gtk_widget_destroy), window);
-  gtk_layout_put(GTK_LAYOUT(layout), button, 400, 480);
+  gtk_layout_put(GTK_LAYOUT(layout), button, 480, 550);
   gtk_grid_attach (GTK_GRID (grid), button, 250, 3, 3, 1);
 
+    image = gtk_image_new_from_file("7.png");
+    gtk_layout_put(GTK_LAYOUT(layout), image, 50, 380);
+     gtk_grid_attach (GTK_GRID (grid), image, 250, 3, 3, 1);
 
     box = gtk_box_new (TRUE, 1);
     gtk_box_pack_end (GTK_BOX (box), button, TRUE, TRUE, 1);
