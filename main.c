@@ -27,6 +27,11 @@ void do_calculate(GtkWidget *button2, gpointer data) {
             break;
         }
     }
+    if (check == 0){
+      double num1 = atof((char *)gtk_entry_get_text(GTK_ENTRY(number1)));
+      gchar *select_scale1 = gtk_combo_box_text_get_active_text(GTK_COMBO_BOX_TEXT(combo_box1));
+      gchar *select_scale2 = gtk_combo_box_text_get_active_text(GTK_COMBO_BOX_TEXT(combo_box2));
+    }
 }
 static void libraryscale(GtkApplication *app,GtkWidget *widget, gpointer data) {
 	GtkWidget *window;
