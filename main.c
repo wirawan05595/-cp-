@@ -10,6 +10,25 @@ static GtkWidget *combo_box2;
 const char *scale1[] = {"ช้อนชา", "ช้อนโต๊ะ","เครื่องชั่ง(หน่วยกรัม)","ถ้วยตวง", "ปอนด์", "ไพน์", "ควอท", "แกลลอน","ออนซ์"};
 const char *scale2[] = {"ช้อนชา", "ช้อนโต๊ะ","เครื่องชั่ง(หน่วยกรัม)","ถ้วยตวง", "ปอนด์", "ไพน์", "ควอท", "แกลลอน","ออนซ์"};
 
+
+
+void do_calculate(GtkWidget *button2, gpointer data) {
+    char* ck1 = (char*)gtk_entry_get_text(GTK_ENTRY(number1));
+    char buffer[100];
+    int check = 0;
+
+     for (int j = 0; j < 10;j++)
+    {
+        if (ck1[j] == 47)
+        {
+            snprintf(buffer, sizeof(buffer), "กรุณากรอกใหม่");
+            gtk_label_set_text(GTK_LABEL(output), buffer);
+            check ++;
+            break;
+        }
+    }
+
+}
 static void libraryscale(GtkApplication *app,GtkWidget *widget, gpointer data) {
 	GtkWidget *window;
 	GtkWidget *grid;
