@@ -16,7 +16,7 @@ void do_calculate(GtkWidget *button2, gpointer data) {
     char* ck1 = (char*)gtk_entry_get_text(GTK_ENTRY(number1));
     char buffer[100];
     int check = 0;
-
+// *********************************** ดักคนใส่ เศษส่วน ****************
      for (int j = 0; j < 10;j++)
     {
         if (ck1[j] == 47)
@@ -27,7 +27,6 @@ void do_calculate(GtkWidget *button2, gpointer data) {
             break;
         }
     }
-
 }
 static void libraryscale(GtkApplication *app,GtkWidget *widget, gpointer data) {
 	GtkWidget *window;
