@@ -91,8 +91,6 @@ static void section(GtkApplication *app,GtkWidget *widget, gpointer data) {
 
     result = gtk_label_new("  ");
     gtk_grid_attach(GTK_GRID(grid), result, 0, 4, 5, 1);
-    result = gtk_label_new("*มาตราส่วนสามารถพิมพ์เป็นตัวอักษร หรือ ตัวเลขตามที่ให้ไว้ใน 'มาตราส่วน' ก็ได้*");
-    gtk_grid_attach(GTK_GRID(grid), result, 0, 5, 6, 1);
 
     gtk_widget_set_size_request (window, 500, 500);
     box = gtk_box_new (TRUE, 1);
