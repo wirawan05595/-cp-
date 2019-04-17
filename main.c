@@ -27,11 +27,27 @@ void do_calculate(GtkWidget *button2, gpointer data) {
             break;
         }
     }
-    if (check == 0){
+if (check == 0){
       double num1 = atof((char *)gtk_entry_get_text(GTK_ENTRY(number1)));
       gchar *select_scale1 = gtk_combo_box_text_get_active_text(GTK_COMBO_BOX_TEXT(combo_box1));
       gchar *select_scale2 = gtk_combo_box_text_get_active_text(GTK_COMBO_BOX_TEXT(combo_box2));
+
+      // *********************************** แปลงช้อนชาเป็น... ****************
+    if (strcmp(select_scale1, scale1[0]) == 0 && strcmp(select_scale2, scale2[0]) == 0)
+    {
+        if (fmod(num1,1) == 0)
+        {
+            snprintf(buffer, sizeof(buffer), "%.0lf %s", num1 ,select_scale1);
+            gtk_label_set_text(GTK_LABEL(output), buffer);
+        }
+        else{
+            snprintf(buffer, sizeof(buffer), "%.02lf %s", num1 ,select_scale1);
+            gtk_label_set_text(GTK_LABEL(output), buffer);
+        }
     }
+
+
+}
 }
 static void libraryscale(GtkApplication *app,GtkWidget *widget, gpointer data) {
 	GtkWidget *window;
