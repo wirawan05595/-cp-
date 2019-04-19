@@ -633,25 +633,21 @@ if (check == 0)
 
 static void help(GtkApplication *app,GtkWidget *widget, gpointer data) {
     GtkWidget *window;
-    // GtkWidget *grid;
+    GtkWidget *image2;
+    GtkWidget *layout;
     window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
-    gtk_window_set_title (GTK_WINDOW (window), "Second Window");
+    gtk_window_set_title (GTK_WINDOW (window), "help");
     gtk_container_set_border_width (GTK_CONTAINER (window), 50);
-    gtk_widget_set_size_request (window, 500, 500);
-    // grid = gtk_grid_new ();
-    // gtk_container_add (GTK_CONTAINER (window), grid);
+    gtk_widget_set_size_request (window, 640, 790);
     gtk_window_set_position (GTK_WINDOW (window), GTK_WIN_POS_CENTER);
-
-
-
-
-
+    layout = gtk_layout_new(NULL, NULL);
+    gtk_container_add(GTK_CONTAINER (window), layout);
+    gtk_widget_show(layout);
+    image2 = gtk_image_new_from_file("help2.png");
+    gtk_layout_put(GTK_LAYOUT(layout), image2, 0, 0);
 
     gtk_widget_show_all (window);
-
 }
-
-
 
 
 
@@ -813,7 +809,6 @@ static void activate (GtkApplication *app,gpointer user_data)
   button = gtk_button_new();
   image = gtk_image_new_from_file("5.png");
     gtk_button_set_image(GTK_BUTTON(button), image);
-    gtk_button_set_relief(GTK_BUTTON(button), GTK_RELIEF_NONE);
     gtk_button_set_relief(GTK_BUTTON(button), GTK_RELIEF_NONE);
   g_signal_connect_swapped (button, "clicked", G_CALLBACK (gtk_widget_destroy), window);
   gtk_layout_put(GTK_LAYOUT(layout), button, 480, 550);
