@@ -643,7 +643,7 @@ static void help(GtkApplication *app,GtkWidget *widget, gpointer data) {
     layout = gtk_layout_new(NULL, NULL);
     gtk_container_add(GTK_CONTAINER (window), layout);
     gtk_widget_show(layout);
-    image2 = gtk_image_new_from_file("help2.png");
+    image2 = gtk_image_new_from_file("img/help2.png");
     gtk_layout_put(GTK_LAYOUT(layout), image2, 0, 0);
 
     gtk_widget_show_all (window);
@@ -666,7 +666,7 @@ static void section(GtkApplication *app,GtkWidget *widget, gpointer data) {
     layout = gtk_layout_new(NULL, NULL);
     gtk_container_add(GTK_CONTAINER (window), layout);
     gtk_widget_show(layout);
-    image2 = gtk_image_new_from_file("2.jpg");
+    image2 = gtk_image_new_from_file("img/2.jpg");
     gtk_layout_put(GTK_LAYOUT(layout), image2, 0, 0);
     grid = gtk_grid_new ();
     gtk_container_add (GTK_CONTAINER (window), grid);
@@ -676,7 +676,7 @@ static void section(GtkApplication *app,GtkWidget *widget, gpointer data) {
 
 
     button = gtk_button_new();
-     image2 = gtk_image_new_from_file("help.png");
+     image2 = gtk_image_new_from_file("img/help.png");
     gtk_button_set_image(GTK_BUTTON(button), image2);
     gtk_button_set_relief(GTK_BUTTON(button), GTK_RELIEF_NONE);
     g_signal_connect (button, "clicked", G_CALLBACK (help), (gpointer) window);
@@ -685,7 +685,7 @@ static void section(GtkApplication *app,GtkWidget *widget, gpointer data) {
 
 
 
-    image2 = gtk_image_new_from_file("text2.png");
+    image2 = gtk_image_new_from_file("img/text2.png");
     gtk_layout_put(GTK_LAYOUT(layout), image2, 110, 100);
     gtk_grid_attach(GTK_GRID(grid), image2, 2, 1, 1, 1);
 
@@ -695,7 +695,7 @@ static void section(GtkApplication *app,GtkWidget *widget, gpointer data) {
     gtk_grid_attach(GTK_GRID(grid), number1, 3, 1, 1, 1);
 
 
-    image2 = gtk_image_new_from_file("text1.png");
+    image2 = gtk_image_new_from_file("img/text1.png");
     gtk_layout_put(GTK_LAYOUT(layout), image2, 100, 180);
     gtk_grid_attach(GTK_GRID(grid), image2, 0, 3, 1, 1);
 
@@ -711,7 +711,7 @@ static void section(GtkApplication *app,GtkWidget *widget, gpointer data) {
 
 
 
-    image2 = gtk_image_new_from_file("text3.png");
+    image2 = gtk_image_new_from_file("img/text3.png");
     gtk_layout_put(GTK_LAYOUT(layout), image2, 100, 260);
     gtk_grid_attach(GTK_GRID(grid), image2, 3, 3, 1, 1);
 
@@ -728,7 +728,7 @@ static void section(GtkApplication *app,GtkWidget *widget, gpointer data) {
 
 
     button2 = gtk_button_new();
-    image2 = gtk_image_new_from_file("ปุ่ม2.png");
+    image2 = gtk_image_new_from_file("img/ปุ่ม2.png");
     gtk_button_set_image(GTK_BUTTON(button2), image2);
     gtk_button_set_relief(GTK_BUTTON(button2), GTK_RELIEF_NONE);
     g_signal_connect(button2, "clicked", G_CALLBACK (do_calculate), (gpointer) window);
@@ -741,15 +741,15 @@ static void section(GtkApplication *app,GtkWidget *widget, gpointer data) {
     gtk_grid_attach(GTK_GRID(grid), result, 0, 5, 6, 1);
 
 
-    image2 = gtk_image_new_from_file("text4.png");
+    image2 = gtk_image_new_from_file("img/text4.png");
     gtk_layout_put(GTK_LAYOUT(layout), image2, 350, 490);
     gtk_grid_attach(GTK_GRID(grid), image2, 0, 7, 7, 1);
 
-    image2 = gtk_image_new_from_file("output.png");
+    image2 = gtk_image_new_from_file("img/output.png");
     gtk_layout_put(GTK_LAYOUT(layout), image2, 380, 600);
     gtk_grid_attach(GTK_GRID(grid), image2, 0, 8, 8, 1);
 
-    image2 = gtk_image_new_from_file("8.png");
+    image2 = gtk_image_new_from_file("img/8.png");
     gtk_layout_put(GTK_LAYOUT(layout), image2, 750, 10);
     gtk_grid_attach(GTK_GRID(grid), image2, 0, 8, 8, 1);
 
@@ -788,16 +788,16 @@ static void activate (GtkApplication *app,gpointer user_data)
   layout = gtk_layout_new(NULL, NULL);
     gtk_container_add(GTK_CONTAINER (window), layout);
     gtk_widget_show(layout);
-    image = gtk_image_new_from_file("bg_star.jpg");
+    image = gtk_image_new_from_file("img/bg_star.jpg");
     gtk_layout_put(GTK_LAYOUT(layout), image, 0, 0);
 
-    image = gtk_image_new_from_file("logo.png");
+    image = gtk_image_new_from_file("img/logo.png");
   gtk_layout_put(GTK_LAYOUT(layout), image, 150, 10);
   grid = gtk_grid_new ();
   gtk_container_add (GTK_CONTAINER (window), grid);
 
   button = gtk_button_new();
-  image = gtk_image_new_from_file("1.png");
+  image = gtk_image_new_from_file("img/1.png");
   gtk_button_set_image(GTK_BUTTON(button), image);
     gtk_button_set_relief(GTK_BUTTON(button), GTK_RELIEF_NONE);
   g_signal_connect (button, "clicked", G_CALLBACK (section), (gpointer) window);
@@ -807,14 +807,14 @@ static void activate (GtkApplication *app,gpointer user_data)
 
 
   button = gtk_button_new();
-  image = gtk_image_new_from_file("5.png");
+  image = gtk_image_new_from_file("img/5.png");
     gtk_button_set_image(GTK_BUTTON(button), image);
     gtk_button_set_relief(GTK_BUTTON(button), GTK_RELIEF_NONE);
   g_signal_connect_swapped (button, "clicked", G_CALLBACK (gtk_widget_destroy), window);
   gtk_layout_put(GTK_LAYOUT(layout), button, 480, 550);
   gtk_grid_attach (GTK_GRID (grid), button, 250, 3, 3, 1);
 
-    image = gtk_image_new_from_file("7.png");
+    image = gtk_image_new_from_file("img/7.png");
     gtk_layout_put(GTK_LAYOUT(layout), image, 50, 380);
      gtk_grid_attach (GTK_GRID (grid), image, 250, 3, 3, 1);
 
