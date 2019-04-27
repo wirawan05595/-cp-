@@ -9,10 +9,14 @@ static GtkWidget *output;
 static GtkWidget *number1;
 static GtkWidget *combo_box1;
 static GtkWidget *combo_box2;
+static void close_window(GtkWidget *widget, gpointer data);
 const char *scale1[] = {"ช้อนชา", "ช้อนโต๊ะ","เครื่องชั่ง(หน่วยกรัม)","ถ้วยตวง", "ปอนด์", "ไพน์", "ควอท", "แกลลอน","ออนซ์"};
 const char *scale2[] = {"ช้อนชา", "ช้อนโต๊ะ","เครื่องชั่ง(หน่วยกรัม)","ถ้วยตวง", "ปอนด์", "ไพน์", "ควอท", "แกลลอน","ออนซ์"};
 
-
+static void close_window(GtkWidget *widget, gpointer data)
+{
+    gtk_widget_destroy(data);
+}
 
 void do_calculate(GtkWidget *button2, gpointer data) {
     char* ck1 = (char*)gtk_entry_get_text(GTK_ENTRY(number1));
@@ -624,9 +628,59 @@ if (check == 0)
 }
 }
 
+static void howtouse(GtkApplication *app,GtkWidget *widget, gpointer data) {
+    GtkWidget *window;
+    GtkWidget *image2,*button;
+    GtkWidget *layout;
+    window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
+    gtk_window_set_title (GTK_WINDOW (window), "howtouse");
+    gtk_container_set_border_width (GTK_CONTAINER (window), 50);
+    gtk_widget_set_size_request (window, 640, 900);
+    gtk_window_set_position (GTK_WINDOW (window), GTK_WIN_POS_CENTER);
+    layout = gtk_layout_new(NULL, NULL);
+    gtk_container_add(GTK_CONTAINER (window), layout);
+    gtk_widget_show(layout);
+    image2 = gtk_image_new_from_file("img/help2.png");
+    gtk_layout_put(GTK_LAYOUT(layout), image2, 0, 0);
+
+    button = gtk_button_new();
+    image2 = gtk_image_new_from_file("img/close.png");
+    gtk_button_set_image(GTK_BUTTON(button), image2);
+    gtk_button_set_relief(GTK_BUTTON(button), GTK_RELIEF_NONE);
+    g_signal_connect(button, "clicked", G_CALLBACK(close_window), window);
+   gtk_layout_put(GTK_LAYOUT(layout), button, 150, 700);
+
+    gtk_widget_show_all (window);
+}
+
+static void  about(GtkApplication *app,GtkWidget *widget, gpointer data) {
+    GtkWidget *window;
+    GtkWidget *image2,*button;
+    GtkWidget *layout;
+    window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
+    gtk_window_set_title (GTK_WINDOW (window), "about");
+    gtk_container_set_border_width (GTK_CONTAINER (window), 0);
+    gtk_window_set_default_size(GTK_WINDOW(window), 560, 700);
+    gtk_window_set_position(GTK_WINDOW(window), GTK_WIN_POS_CENTER);
+    layout = gtk_layout_new(NULL, NULL);
+    gtk_container_add(GTK_CONTAINER (window), layout);
+    gtk_widget_show(layout);
+    image2 = gtk_image_new_from_file("img/about2.jpg");
+    gtk_layout_put(GTK_LAYOUT(layout), image2, 0, 0);
 
 
 
+
+    button = gtk_button_new();
+    image2 = gtk_image_new_from_file("img/close.png");
+    gtk_button_set_image(GTK_BUTTON(button), image2);
+    gtk_button_set_relief(GTK_BUTTON(button), GTK_RELIEF_NONE);
+    g_signal_connect(button, "clicked", G_CALLBACK(close_window), window);
+   gtk_layout_put(GTK_LAYOUT(layout), button, 150, 600);
+
+    gtk_widget_show_all (window);
+
+}
 
 
 
@@ -635,19 +689,43 @@ static void help(GtkApplication *app,GtkWidget *widget, gpointer data) {
     GtkWidget *window;
     GtkWidget *image2;
     GtkWidget *layout;
+    GtkWidget *button;
     window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
     gtk_window_set_title (GTK_WINDOW (window), "help");
-    gtk_container_set_border_width (GTK_CONTAINER (window), 50);
-    gtk_widget_set_size_request (window, 640, 790);
-    gtk_window_set_position (GTK_WINDOW (window), GTK_WIN_POS_CENTER);
+    gtk_container_set_border_width (GTK_CONTAINER (window), 0);
+    gtk_window_set_default_size(GTK_WINDOW(window), 500, 400);
+    gtk_window_set_position(GTK_WINDOW(window), GTK_WIN_POS_CENTER);
     layout = gtk_layout_new(NULL, NULL);
     gtk_container_add(GTK_CONTAINER (window), layout);
     gtk_widget_show(layout);
-    image2 = gtk_image_new_from_file("img/help2.png");
+    image2 = gtk_image_new_from_file("img/bg_star.jpg");
     gtk_layout_put(GTK_LAYOUT(layout), image2, 0, 0);
 
+    button = gtk_button_new();
+     image2 = gtk_image_new_from_file("img/About.png");
+    gtk_button_set_image(GTK_BUTTON(button), image2);
+    gtk_button_set_relief(GTK_BUTTON(button), GTK_RELIEF_NONE);
+    g_signal_connect (button, "clicked", G_CALLBACK (about), (gpointer) window);
+    gtk_layout_put(GTK_LAYOUT(layout), button, 150, 100);
+
+    button = gtk_button_new();
+     image2 = gtk_image_new_from_file("img/Howtouse.png");
+    gtk_button_set_image(GTK_BUTTON(button), image2);
+    gtk_button_set_relief(GTK_BUTTON(button), GTK_RELIEF_NONE);
+    g_signal_connect (button, "clicked", G_CALLBACK (howtouse), (gpointer) window);
+    gtk_layout_put(GTK_LAYOUT(layout), button, 150, 200);
+
+    button = gtk_button_new();
+    image2 = gtk_image_new_from_file("img/close.png");
+    gtk_button_set_image(GTK_BUTTON(button), image2);
+    gtk_button_set_relief(GTK_BUTTON(button), GTK_RELIEF_NONE);
+    g_signal_connect(button, "clicked", G_CALLBACK(close_window), window);
+   gtk_layout_put(GTK_LAYOUT(layout), button, 300, 300);
     gtk_widget_show_all (window);
 }
+
+
+
 
 
 
@@ -760,8 +838,12 @@ static void section(GtkApplication *app,GtkWidget *widget, gpointer data) {
     gtk_grid_attach(GTK_GRID(grid), output, 0, 9, 9, 1);
 
 
-
-
+    button = gtk_button_new();
+    image2 = gtk_image_new_from_file("img/close.png");
+    gtk_button_set_image(GTK_BUTTON(button), image2);
+    gtk_button_set_relief(GTK_BUTTON(button), GTK_RELIEF_NONE);
+    g_signal_connect(button, "clicked", G_CALLBACK(close_window), window);
+   gtk_layout_put(GTK_LAYOUT(layout), button, 750, 600);
 
     box = gtk_box_new (TRUE, 1);
     gtk_box_pack_end (GTK_BOX (box), button, TRUE, TRUE, 1);
@@ -821,6 +903,13 @@ static void activate (GtkApplication *app,gpointer user_data)
     box = gtk_box_new (TRUE, 1);
     gtk_box_pack_end (GTK_BOX (box), button, TRUE, TRUE, 1);
     gtk_container_add (GTK_CONTAINER (window), box);
+
+    button = gtk_button_new();
+  image = gtk_image_new_from_file("img/help.png");
+  gtk_button_set_image(GTK_BUTTON(button), image);
+    gtk_button_set_relief(GTK_BUTTON(button), GTK_RELIEF_NONE);
+  g_signal_connect (button, "clicked", G_CALLBACK (help), (gpointer) window);
+  gtk_layout_put(GTK_LAYOUT(layout), button, 0, 0);
 
   gtk_widget_show_all (window);
 
