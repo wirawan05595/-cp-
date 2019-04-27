@@ -1,1 +1,0 @@
-gcc -Wall -g -o main main.c -lm `pkg-config --cflags --libs gtk+-3.0 `
