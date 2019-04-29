@@ -24,9 +24,9 @@
 นางสาว อณิษฐา ใจอ่อน 61070255 <br>
     Git Hub:<a href="https://github.com/AnitthaJai-on">Anittha Jai-on</a>
       </tr><br>
-</table>
 	<tr align="center">
 นางสาวอัญชลี ทิพย์ประเสริฐ 61070264 <br>
     Git Hub:<a href="https://github.com/ppllelp">ppllelp</a>
       </tr><br>
+</table>
 
