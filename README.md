@@ -1,5 +1,5 @@
 # ชื่อโปรเจค The Changer Bakery
-<img src="img/project.jpg" width="300px" height="300px"> 
+<img src="img/project.jpg" width="500px" height="500px"> 
 
 ## ความเป็นมา
 เนื่องจากว่ามีคนในกลุ่มที่ชื่นชอบการทำขนม และในการทำขนมนั้น เป็นสิ่งที่ขึ้นชื่อ ด้านความแป๊ะของสูตร
