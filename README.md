@@ -20,13 +20,13 @@
 นางสาววิลาวัณย์ ใจงามเลิศวงศ์ 61070209 <br>
     Git Hub:<a href="https://github.com/wirawan05595">wirawan05595</a>
       </tr><br>
-	<tr align="center">
-นางสาวอัญชลี ทิพย์ประเสริฐ 61070264 <br>
-    Git Hub:<a href="https://github.com/ppllelp">ppllelp</a>
-      </tr><br>
-	<tr align="center">
+		<tr align="center">
 นางสาว อณิษฐา ใจอ่อน 61070255 <br>
     Git Hub:<a href="https://github.com/AnitthaJai-on">Anittha Jai-on</a>
       </tr><br>
 </table>
+	<tr align="center">
+นางสาวอัญชลี ทิพย์ประเสริฐ 61070264 <br>
+    Git Hub:<a href="https://github.com/ppllelp">ppllelp</a>
+      </tr><br>
 
