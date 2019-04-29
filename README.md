@@ -16,7 +16,7 @@
 **น.ส.มัญชรี ทยาธรรม**|**น.ส.วิลาวัณย์ ใจงามเลิศวงศ์**
 61070176|61070209
 [mcrrlee](https://github.com/mcrrlee)|[wirawan05595](https://github.com/wirawan05595)
-<img src="img/bell.jpg" width="250px" height="250px">|<img src="img/appple.jpg" width="250px" height="250px">
+<img src="img/bell.jpg" width="250px" height="250px">|<img src="img/apple.jpg" width="250px" height="250px">
 **น.ส.อณิษฐา ใจอ่อน**|**น.ส.อัญชลี ทิพย์ประเสริฐ**
 61070255|61070264
 [AnitthaJai-on](https://github.com/AnitthaJai-on)|[ppllelp](https://github.com/ppllelp)
