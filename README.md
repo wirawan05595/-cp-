@@ -13,19 +13,19 @@
 ## จัดทำโดย
 <table>
 	<tr align="center">
-		<b>นางสาวมัญชรี ทยาธรรม 61070176</b>
+		<b>นางสาวมัญชรี ทยาธรรม 61070176</b><br>
 		Git Hub: <a href="https://github.com/mcrrlee">mcrrlee</a>
       </tr><br>
 	<tr align="center"><b>
-		นางสาววิลาวัณย์ ใจงามเลิศวงศ์ 61070209</b>
+		นางสาววิลาวัณย์ ใจงามเลิศวงศ์ 61070209</b><br>
     Git Hub:<a href="https://github.com/wirawan05595">wirawan05595</a>
       </tr><br>
 		<tr align="center"><b>
-นางสาว อณิษฐา ใจอ่อน 61070255</b>
+นางสาว อณิษฐา ใจอ่อน 61070255</b><br>
     Git Hub:<a href="https://github.com/AnitthaJai-on">Anittha Jai-on</a>
       </tr><br>
 	<tr align="center"><b>
-นางสาวอัญชลี ทิพย์ประเสริฐ 61070264</b>
+นางสาวอัญชลี ทิพย์ประเสริฐ 61070264</b><br>
     Git Hub:<a href="https://github.com/ppllelp">ppllelp</a>
       </tr><br>
 </table>
