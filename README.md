@@ -1,7 +1,8 @@
 # The Changer Bakery
-<img src="img/project.jpg" width="500px" height="500px">
+<img src="img/project.jpg">
+
 **VDO PROJECT :** https://www.youtube.com/watch?v=SgYDd1Y6hMg&feature=youtu.be
-**VDO DOWNLOAD GTK and compile project :** https://www.youtube.com/watch?v=1gSPtAWzJDg
+<br>**VDO DOWNLOAD GTK and compile project :** https://www.youtube.com/watch?v=1gSPtAWzJDg
 
 ## ความเป็นมา
 เนื่องจากว่ามีคนในกลุ่มที่ชื่นชอบการทำขนม และในการทำขนมนั้น เป็นสิ่งที่ขึ้นชื่อ ด้านความแป๊ะของสูตร
