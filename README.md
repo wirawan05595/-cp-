@@ -15,6 +15,9 @@ C และได้ประยุกต์ร่วมกับ Library GTK
 
 ## จุดประสงค์
 เพื่อช่วยทำให้คนที่ชอบทำขนมแต่มีอุปกรณ์ที่ไม่พร้อมตามสูตรของขนมที่จะทำ สามารถ adapt ไปใช้ กับอุปกรณ์ที่มี ให้สามารถแปลงไปใช้ได้ตามสูตรขนมที่ต้องการ
+## ขอขอบคุณ ข้อมูลจาก
+https://www.facebook.com/OurKitchenThailand/posts/699496676782994
+http://www.archeep.com/chemistry/chem_mt.htm?fbclid=IwAR1LdyVQqey-kFoiTxLnx4ANUXTzcVQrxwunCDQk7s4AwVQSjEyQx_2pg34
 
 ## จัดทำโดย
 <img src="img/carrot.jpg" width="250px" height="250px"> |<img src="img/ice.jpg" width="250px" height="250px">
